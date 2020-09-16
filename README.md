@@ -3,9 +3,9 @@
 [![Github All Releases](https://img.shields.io/github/downloads/jeremyhart/QuickLook.Plugin.HelixViewer/total.svg)](https://github.com/jeremyhart/QuickLook.Plugin.HelixViewer/releases)
 [![GitHub release](https://img.shields.io/github/release/jeremyhart/QuickLook.Plugin.HelixViewer/all.svg)](https://github.com/jeremyhart/QuickLook.Plugin.HelixViewer)
   
-A plugin for viewing 3D models in QuickLook: https://github.com/xupefei/QuickLook
+A plugin for viewing MMD models in QuickLook: https://github.com/xupefei/QuickLook
 
-Supported file types: .stl, .obj, .3ds, .lwo & .ply
+Supported file types: .pmx
 
 ### Download & Installation
 1. Go to [Release page][1] and download the latest version.
