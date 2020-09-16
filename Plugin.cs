@@ -34,7 +34,7 @@ namespace QuickLook.Plugin.HelixViewer
 
         public bool CanHandle(string path)
         {
-            string[] Extensions = { ".stl", ".obj", ".3ds", ".lwo", ".ply" };
+            string[] Extensions = { ".pmx"};
 
             return !Directory.Exists(path) && Extensions.Any(path.ToLower().EndsWith);
         }
@@ -46,21 +46,23 @@ namespace QuickLook.Plugin.HelixViewer
 
         public void View(string path, ContextObject context)
         {
-          
-            context.ViewerContent = new HelixViewerPanel(path);
+            try
+            {
+
+                context.ViewerContent = new HelixViewerPanel(path);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message+"\n"+e.StackTrace);
+            }
             context.Title = $"{Path.GetFileNameWithoutExtension(path)}";
 
             context.IsBusy = false;
-
         }
 
         public void Cleanup()
         {
-            GC.SuppressFinalize(this);
-
-         
+            GC.SuppressFinalize(this);                    
         }
-
-        
     }
 }

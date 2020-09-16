@@ -16,6 +16,7 @@
             >
             <ModelVisual3D x:Name="PreviewModel">
             </ModelVisual3D>
+            <!--<helix:MeshGeometryVisual3D x:Name="PMXGeometryVisual3D"  />-->
             <helix:DefaultLights />
             <helix:HelixViewport3D.RotateGesture>
                 <MouseGesture MouseAction="LeftClick"/>
